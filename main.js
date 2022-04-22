@@ -3,4 +3,5 @@ const menu_mobi = document.querySelector(".menu-mobi");
 
 mobi_togglers.addEventListener("click", () => {
   menu_mobi.classList.toggle("active");
+  console.log("ôi");
 });

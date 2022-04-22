@@ -131,6 +131,11 @@ img {
   max-width: 1920px;
   width: 1920px;
   .header-inner {
+    background-color: #ffffff;
+    top: 0;
+    position: fixed;
+    height: 95px;
+    z-index: 1000;
     .header {
       margin: 29px 0;
       @include flex(center, space-between);
@@ -164,7 +169,8 @@ img {
         }
       }
       .header-menu-bobi {
-        position: relative;
+        overflow: hidden;
+
         .menu-mobi {
           overflow: hidden;
           opacity: 0;
@@ -173,10 +179,13 @@ img {
           background-color: #ffffff;
           width: 300px;
           right: -300px;
-          margin-top: 22px;
-          transition: right 0.5s ease;
+          transition: all 0.5s ease;
+          margin-top: 48px;
+
           &.active {
             right: 0;
+            position: fixed;
+            z-index: 9999;
           }
           .header-menu-list {
             padding-top: 20px;
