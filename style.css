@@ -141,6 +141,13 @@ img {
   max-width: 1920px;
   width: 1920px;
 }
+.wrapper .header-inner {
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  height: 95px;
+  z-index: 1000;
+}
 .wrapper .header-inner .header {
   margin: 29px 0;
   display: flex;
@@ -179,7 +186,7 @@ img {
   color: #e3403e;
 }
 .wrapper .header-inner .header .header-menu-bobi {
-  position: relative;
+  overflow: hidden;
 }
 .wrapper .header-inner .header .header-menu-bobi .menu-mobi {
   overflow: hidden;
@@ -189,11 +196,13 @@ img {
   background-color: #ffffff;
   width: 300px;
   right: -300px;
-  margin-top: 22px;
-  transition: right 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 48px;
 }
 .wrapper .header-inner .header .header-menu-bobi .menu-mobi.active {
   right: 0;
+  position: fixed;
+  z-index: 9999;
 }
 .wrapper .header-inner .header .header-menu-bobi .menu-mobi .header-menu-list {
   padding-top: 20px;
