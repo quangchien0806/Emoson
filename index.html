@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&family=Roboto:wght@500;700;900&display=swap"
       rel="stylesheet"
@@ -51,10 +53,19 @@
                 <li class="header-menu-item">
                   <a href="#" class="header-menu-link"> Contact</a>
                 </li>
-                <i class="fa-solid fa-magnifying-glass search"></i>
+                <button class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  class="input-search"
+                  type="text"
+                  name="name"
+                  placeholder="Search.."
+                  required=""
+                />
               </ul>
             </nav>
-            <div class="header-menu-bobi">
+            <div class="header-menu-mobi">
               <div class="header-menu-toggler">
                 <span></span>
                 <span></span>
@@ -94,8 +105,8 @@
         </div>
       </header>
       <div class="slider">
-        <div class="slider-list">
-          <div class="slider-details">
+        <div class="owl-carousel owl-theme slider-list">
+          <div class="item slider-details">
             <img class="slider-img" src="img/slider1.jpg" alt="" />
             <div class="text-details">
               <h6>Healthy</h6>
@@ -107,7 +118,31 @@
               </div>
             </div>
           </div>
-          <div class="slider-details">
+          <div class="item slider-details">
+            <img class="slider-img" src="img/slider1.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
+            <img class="slider-img" src="img/slider1.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
             <img src="img/slider2.jpg" alt="" />
             <div class="text-details">
               <h6>Healthy</h6>
@@ -119,7 +154,67 @@
               </div>
             </div>
           </div>
-          <div class="slider-details">
+          <div class="item slider-details">
+            <img src="img/slider2.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
+            <img src="img/slider2.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
+            <img src="img/slider2.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
+            <img src="img/slider2.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
+            <img src="img/slider2.jpg" alt="" />
+            <div class="text-details">
+              <h6>Healthy</h6>
+              <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="text-logo">
+                <img src="img/By_Jonh_Cena.png" alt="" />
+                <div class="dot"></div>
+                <h4 class="time">February 15, 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item slider-details">
             <img src="img/slider3.jpg" alt="" />
             <div class="text-details">
               <h6>Healthy</h6>
@@ -131,12 +226,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="navigation-dots">
-          <div class="single-dot active"></div>
-          <div class="single-dot"></div>
-          <div class="single-dot"></div>
-          <div class="single-dot"></div>
         </div>
       </div>
       <div class="part-posts">
@@ -156,7 +245,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -172,7 +263,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -188,7 +281,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -204,7 +299,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -220,7 +317,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -236,7 +335,9 @@
                     <a href="#">
                       <h6>Healthy</h6>
                     </a>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    <a href="#">
+                      <p>Nam libero tempore, cum soluta nobis est eligendi</p>
+                    </a>
                     <div class="text-logo">
                       <img src="img/By_Jonh_Cena.png" alt="" />
                       <div class="dot"></div>
@@ -371,46 +472,51 @@
         </div>
       </div>
       <div class="today-menu">
-        <img class="menu-img" src="img/BG.png" alt="" />
-        <div class="menu">
-          <div class="container">
+        <div class="container">
+          <div class="menu-details">
             <h2 class="name-part">
               Today’s Menu
               <div class="square"></div>
             </h2>
             <div class="list-menu">
-              <div class="menu-details">
-                <img
-                  class="img-details-menu"
-                  src="img/menu-today1.jpg"
-                  alt=""
-                />
-                <div class="text-menu">
-                  <h4>Appetizers</h4>
-                  <img src="img/By_Jonh_Cena.png" alt="" />
-                </div>
+              <div class="list-menu-con">
+                <a href="#" class="menu-details">
+                  <img
+                    class="img-details-menu"
+                    src="img/menu-today1.jpg"
+                    alt=""
+                  />
+                  <div class="text-menu">
+                    <h4>Appetizers</h4>
+                    <img src="img/By_Jonh_Cena.png" alt="" />
+                  </div>
+                </a>
               </div>
-              <div class="menu-details">
-                <img
-                  class="img-details-menu"
-                  src="img/menu-today2.jpg"
-                  alt=""
-                />
-                <div class="text-menu">
-                  <h4>Appetizers</h4>
-                  <img src="img/By_Jonh_Cena.png" alt="" />
-                </div>
+              <div class="list-menu-con">
+                <a href="#" class="menu-details">
+                  <img
+                    class="img-details-menu"
+                    src="img/menu-today2.jpg"
+                    alt=""
+                  />
+                  <div class="text-menu">
+                    <h4>Appetizers</h4>
+                    <img src="img/By_Jonh_Cena.png" alt="" />
+                  </div>
+                </a>
               </div>
-              <div class="menu-details">
-                <img
-                  class="img-details-menu"
-                  src="img/menu-today3.jpg"
-                  alt=""
-                />
-                <div class="text-menu">
-                  <h4>Appetizers</h4>
-                  <img src="img/By_Jonh_Cena.png" alt="" />
-                </div>
+              <div class="list-menu-con">
+                <a href="#" class="menu-details">
+                  <img
+                    class="img-details-menu"
+                    src="img/menu-today3.jpg"
+                    alt=""
+                  />
+                  <div class="text-menu">
+                    <h4>Appetizers</h4>
+                    <img src="img/By_Jonh_Cena.png" alt="" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -426,128 +532,154 @@
               </h2>
               <div class="list-details">
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular1.jpg" alt="" />
-                  <div class="text-details">
-                    <h6>salads</h6>
-                    <h3>
-                      Blanditiis praesentium voluptatum deleniti atque corrupti
-                      quos dolores
-                    </h3>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular1.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular2.jpg" alt="" />
-
-                  <div class="text-details">
-                    <h6>Vegetarian</h6>
-                    <h3>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem
-                    </h3>
-                    <p>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui praesentium voluptatum deleniti atque corrupti quos
-                      dolores et quas molestias excepturi sint occaecati
-                      cupiditate non provident, similique sunt in culpa.
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular2.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular3.jpg" alt="" />
-                  <div class="text-details">
-                    <h6>meal prep</h6>
-                    <h3>
-                      accusantium doloremque laudantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore veritatis et quasi
-                    </h3>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum, but
-                      the majority have suffered alteration in some form, by
-                      injected humour, or randomised words which don't look even
-                      slightly believable.
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular3.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular4.jpg" alt="" />
-                  <div class="text-details">
-                    <h6>salads</h6>
-                    <h3>he rejects pleasures to secure other greater</h3>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the have suffered alteration in some form,
-                      by injected humour, or randomised words which don't look
-                      even slightly believable.
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular4.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular5.jpg" alt="" />
-                  <div class="text-details">
-                    <h6>salads</h6>
-                    <h3>
-                      Nam libero tempore, cum soluta nobis est eligendi optio
-                      cumque
-                    </h3>
-                    <p>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis voluptatum deleniti atque corrupti quos
-                      dolores et quas molestias but the majority have suffered
-                      alteration in some form, by injected humour..
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular5.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="details-product">
-                  <img class="popular-img" src="img/popular6.jpg" alt="" />
-                  <div class="text-details">
-                    <h6>salads</h6>
-                    <h3>
-                      Blanditiis praesentium voluptatum deleniti atque corrupti
-                      quos dolores
-                    </h3>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
-                    </p>
-                    <div class="text-logo">
-                      <img src="img/By_Jonh_Cena.png" alt="" />
-                      <div class="dot"></div>
-                      <h4 class="time">February 15, 2022</h4>
+                  <a href="#" class="details-product-con">
+                    <img class="popular-img" src="img/popular6.jpg" alt="" />
+                    <div class="text-details">
+                      <div>
+                        <h6>salads</h6>
+                        <h3>
+                          Blanditiis praesentium voluptatum deleniti atque
+                          corrupti quos dolores
+                        </h3>
+                        <p>
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour, or randomised words
+                          which don't look even slightly believable.
+                        </p>
+                        <div class="text-logo">
+                          <img src="img/By_Jonh_Cena.png" alt="" />
+                          <div class="dot"></div>
+                          <h4 class="time">February 15, 2022</h4>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <button class="btn">see more</button>
@@ -559,18 +691,18 @@
                   <div class="straight-line"></div>
                 </div>
                 <div class="list-icon">
-                  <div class="icon-us">
+                  <a href="#" class="icon-us">
                     <i class="fa-brands fa-facebook-f facebook"></i>
-                  </div>
-                  <div class="icon-us">
+                  </a>
+                  <a href="#" class="icon-us">
                     <i class="fa-brands fa-twitter twitter"></i>
-                  </div>
-                  <div class="icon-us">
+                  </a>
+                  <a href="#" class="icon-us">
                     <i class="fa-brands fa-tiktok tiktok"></i>
-                  </div>
-                  <div class="icon-us">
+                  </a>
+                  <a href="#" class="icon-us">
                     <i class="fa-brands fa-instagram-square instagrams"></i>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="newsletter">
@@ -712,6 +844,8 @@
         </div>
       </footer>
     </div>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
