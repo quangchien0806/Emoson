@@ -1,8 +1,8 @@
 const mobi_togglers = document.querySelector(".header-menu-toggler");
-const menu_mobi = document.querySelector(".menu-mobi");
+const header_menu = document.querySelector(".header-menu");
 
 mobi_togglers.addEventListener("click", () => {
-  menu_mobi.classList.toggle("active");
+  header_menu.classList.toggle("active");
 });
 
 const search = document.querySelector(".search");
@@ -14,15 +14,17 @@ search.addEventListener("click", () => {
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
+  autoplay: true,
+  autoplayTimeout: 3000,
   responsive: {
     500: {
+      item: 1,
+    },
+    600: {
       items: 1,
     },
     700: {
       items: 2,
-    },
-    1440: {
-      items: 3,
     },
     1920: {
       items: 3,
